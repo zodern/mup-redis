@@ -31,7 +31,7 @@ mup reconfig
 Redis adds the environment variable `REDIS_URL` to the app. You cannot access redis from outside the server.
 
 ## Commands
-`mup redis setup`
-`mup redis start`
-`mup redis stop`
-`mup redis logs` View redis logs. Supports the same arguments as `mup logs`, including `--tail` and `--follow`.
+- `mup redis setup`
+- `mup redis start`
+- `mup redis stop`
+- `mup redis logs` View redis logs. Supports the same arguments as `mup logs`, including `--tail` and `--follow`.
