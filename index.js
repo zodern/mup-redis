@@ -39,5 +39,17 @@ module.exports = {
       config.app.docker.args.push('--link=redis:redis');
       config.app.docker.args.push('--env=REDIS_URL=redis://redis:6379');
     }
+  },
+  hooks: {
+    'post.setup': function(api) {
+      if (!api.getConfig().redis) {
+        return;
+      }
+
+      api.runCommand('redis.setup')
+        .then(function() {
+          api.runCommand('redis.start');
+        });
+    }
   }
 };

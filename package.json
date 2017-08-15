@@ -8,6 +8,16 @@
   },
   "author": "zodern",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zodern/mup-redis.git"
+  },
+  "keywords": [
+    "meteor-up",
+    "redis"    
+  ],
+  "homepage": "https://github.com/zodern/mup-redis",
+  "bugs": "https://github.com/zodern/mup-redis/issues",
   "dependencies": {
     "joi": "^10.6.0"
   },
