@@ -29,7 +29,7 @@ module.exports = {
     redis: validate
   },
   prepareConfig: function(config) {
-    if (config.app) {
+    if (config.app && config.redis) {
       if (!config.app.docker) {
         config.app.docker = {};
       }
