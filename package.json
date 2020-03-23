@@ -14,7 +14,7 @@
   },
   "keywords": [
     "meteor-up",
-    "redis"    
+    "redis"
   ],
   "homepage": "https://github.com/zodern/mup-redis",
   "bugs": "https://github.com/zodern/mup-redis/issues",

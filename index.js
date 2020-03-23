@@ -46,9 +46,9 @@ module.exports = {
         return;
       }
 
-      api.runCommand('redis.setup')
+      return api.runCommand('redis.setup')
         .then(function() {
-          api.runCommand('redis.start');
+          return api.runCommand('redis.start');
         });
     }
   }
