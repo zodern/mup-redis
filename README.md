@@ -35,3 +35,17 @@ Redis adds the environment variable `REDIS_URL` to the app. You cannot access re
 - `mup redis start`
 - `mup redis stop`
 - `mup redis logs` View redis logs. Supports the same arguments as `mup logs`, including `--tail` and `--follow`.
+
+## Redis Oplog
+To use with [Redis Oplog](https://github.com/cult-of-coders/redis-oplog),
+add the following configuration to your `settings.json`:
+```json
+{
+  "redisOplog": {
+    "redis": {
+      "host": "redis",
+      "port": 6379
+    }
+  }
+}
+```
